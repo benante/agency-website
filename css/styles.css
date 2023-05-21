@@ -68,3 +68,12 @@ header {
 .stack-xl > * + * {
   margin-top: 4rem;
 }
+
+/* IMG & LOGO */
+.pic {
+  width: 30%;
+  height: 30%;
+}
+.hero-pic {
+  width: 100%;
+}
