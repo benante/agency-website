@@ -1,3 +1,70 @@
-body * {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.05rem;
+  background-color: var(--color-grey);
+  color: var(--color-darkblue);
+  overflow-x: hidden;
+}
+:root {
+  --color-darkblue: #21325e;
+  --color-blue: #3e497a;
+  --color-yellow: #f1d00a;
+  --color-grey: #f0f0f0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+header {
+  padding: 0.5rem;
+}
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.center {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-sm {
+  max-width: 20rem;
+}
+.width-lg {
+  max-width: 40rem;
+}
+.width-xl {
+  max-width: 60rem;
+}
+.stack-s > * + * {
+  margin-top: 0.5rem;
+}
+.stack-m > * + * {
+  margin-top: 1rem;
+}
+
+.stack-l > * + * {
+  margin-top: 2rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
 }
