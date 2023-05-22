@@ -10,10 +10,11 @@
   </head>
   <body>
     <!-- Header with name agency and navbar -->
-    <header>
-      <nav>
-        <img class="logo" src="img/superhero (1).png" alt="superhero logo" />
-        <ul>
+    <header class="row justify-space-between">
+      <img class="logo" src="img/Logo1.png" alt="superhero academy logo" />
+
+      <nav role="navigation">
+        <ul class="row" id="menu">
           <li><a href="#"></a>About</li>
           <li><a href="#"></a>Services</li>
           <li><a href="#"></a>Team</li>
@@ -24,7 +25,6 @@
     <main>
       <!-- About -->
       <section>
-        <h1>HERO</h1>
         <img
           class="hero-pic"
           src="img/judeus-samson-tI6m-AXpAsg-unsplash.jpg"
@@ -124,5 +124,19 @@
         reserved.</span
       >
     </footer>
+    <script>
+      var toggle = document.querySelector("#toggle");
+      var menu = document.querySelector("#menu");
+
+      toggle.addEventListener("click", function () {
+        if (menu.classList.contains("is-active")) {
+          this.setAttribute("aria-expanded", "false");
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+          this.setAttribute("aria-expanded", "true");
+        }
+      });
+    </script>
   </body>
 </html>
