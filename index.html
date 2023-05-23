@@ -10,15 +10,31 @@
   </head>
   <body>
     <!-- Header with name agency and navbar -->
-    <header class="row justify-space-between">
-      <img class="logo" src="img/Logo1.png" alt="superhero academy logo" />
+    <header>
+      <nav role="navigation" aria-label="Main menu">
+        <div>
+          <a href="/" class="logo">
+           <img class="logo" src="./img/Logo1.png" alt="Homepage" />
+          </a>
+        </div>
+        <button aria-expanded="true" aria-controls="main-menu">
+          <span>Menu</span>    
 
-      <nav role="navigation">
-        <ul class="row" id="menu">
-          <li><a href="#"></a>About</li>
-          <li><a href="#"></a>Services</li>
-          <li><a href="#"></a>Team</li>
-          <li><a href="#"></a>Contact</li>
+<img class="menu-bars"
+src="./img/Hamburger Menu.svg"
+alt="hamburger menu svg image"
+focusable="false"
+/>
+
+
+        </button>
+       
+        <ul id="main-menu" class="visible">
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Services</li>
+            <li><a href="#"></a>Team</li>
+            <li><a href="#"></a>Contact</li>
+          </ul>
         </ul>
       </nav>
     </header>
