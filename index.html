@@ -84,28 +84,23 @@
           doloribus non! Molestias non a iste placeat cupiditate laborum odit
           expedita.
         </p>
-        <img class="pic" src="img/blackwidow-3.jpg" alt="Black Widow" />
-        <h3>Black Widow</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia
-          ducimus neque amet perferendis autem facere dicta, error quasi
-          doloribus non! Molestias non a iste placeat cupiditate laborum odit
-          expedita.
-        </p>
       </section>
 
       <!-- Contact -->
       <section>
         <!-- Insert preventDefault function -->
-        <form action="" method="POST">
+        <form action="" method="POST" id="form">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <label for="comment">Message:</label>
+          <textarea id="comment" name="comment" required></textarea>
+
+          <label for="subscription">Subscribe to our newsletter</label>
+          <input type="checkbox" name="subscription" id="checkbox" />
 
           <input type="submit" value="Send" />
         </form>
@@ -124,5 +119,6 @@
         reserved.</span
       >
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
