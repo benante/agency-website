@@ -102,6 +102,8 @@ header {
 .container {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--color-yellow);
+  border-radius: 5px;
 }
 
 .card {

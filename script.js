@@ -19,3 +19,22 @@ cards.forEach((wrapper) => {
     wrapper.classList.add("active"); // Add "active" class to the clicked image wrapper
   });
 });
+
+// ARIA ATTRIBUTES
+
+const images = document.querySelectorAll(".card img");
+
+// Add click event listener to each image
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    const caption = image.nextElementSibling; // Get the corresponding caption element
+    console.log(caption);
+    // Toggle the visibility of the caption
+    caption.classList.toggle("show");
+
+    // Toggle the aria-pressed attribute value
+    const isPressed = image.getAttribute("aria-pressed") === "true";
+    image.setAttribute("aria-pressed", !isPressed);
+    console.log(isPressed);
+  });
+});
