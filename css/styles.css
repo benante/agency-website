@@ -204,3 +204,13 @@ header {
     margin-left: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .card {
+    width: auto;
+  }
+}
