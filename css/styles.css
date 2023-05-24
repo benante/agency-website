@@ -27,16 +27,80 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  color: var(--color-darkblue);
+  font-weight: bolder;
 }
+/* Header
+  */
 header {
-  padding: 0.5rem;
+  top: 0;
+  padding: 1rem;
+  padding: 10px;
+  height: 15vh;
+  background-color: var(--color-grey);
 }
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-darkblue);
+}
+
+.menu-bars {
+  height: 20px;
+  width: 35px;
+  margin-left: 5px;
+}
+#main-menu {
+  list-style: none;
+  display: none;
+}
+
+#main-menu.visible {
+  display: block;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  padding: 10px;
+  margin: auto;
+  background-color: var(--color-grey);
+  color: var(--color-darkblue);
+  align-items: center;
+}
+
+#main-menu li {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+}
+
+#main-menu li:hover {
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: var(--color-yellow) 1.95px 1.95px 2.6px;
+}
+/* Primitives */
+
 .row {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .justify-space-between {
   justify-content: space-between;
 }
@@ -76,4 +140,23 @@ header {
 }
 .hero-pic {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  #main-menu {
+    display: flex;
+  }
+  #main-menu.visible {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #main-menu li {
+    margin-top: 0;
+    margin-left: 20px;
+  }
 }

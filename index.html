@@ -11,20 +11,33 @@
   <body>
     <!-- Header with name agency and navbar -->
     <header>
-      <nav>
-        <img class="logo" src="img/superhero (1).png" alt="superhero logo" />
-        <ul>
-          <li><a href="#"></a>About</li>
-          <li><a href="#"></a>Services</li>
-          <li><a href="#"></a>Team</li>
-          <li><a href="#"></a>Contact</li>
+      <nav role="navigation" aria-label="Main menu" class="row justify-space-between">
+        <div>
+          <a href="/" class="logo">
+           <img class="logo" src="./img/Logo1.png" alt="Homepage" />
+          </a>
+        </div>
+        <button aria-expanded="true" aria-controls="main-menu" id="hamburger" class="column">
+          <span>Menu</span>    
+<img class="menu-bars"
+src="./img/Hamburger Menu.svg"
+alt="hamburger menu svg image"
+focusable="false"
+/>
+        </button>
+       
+        <ul id="main-menu" class="visible">
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Services</li>
+            <li><a href="#"></a>Team</li>
+            <li><a href="#"></a>Contact</li>
+          </ul>
         </ul>
       </nav>
     </header>
     <main>
       <!-- About -->
       <section>
-        <h1>HERO</h1>
         <img
           class="hero-pic"
           src="img/judeus-samson-tI6m-AXpAsg-unsplash.jpg"
@@ -120,5 +133,6 @@
       >
     </footer>
     <script src="app.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
