@@ -30,8 +30,7 @@ ul {
   color: var(--color-darkblue);
   font-weight: bolder;
 }
-/* Header
-  */
+/* Header */
 header {
   top: 0;
   padding: 1rem;
@@ -63,7 +62,7 @@ header {
 
 #main-menu.visible {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 0;
   width: 100vw;
@@ -86,6 +85,7 @@ header {
   border-radius: 2px;
   box-shadow: var(--color-yellow) 1.95px 1.95px 2.6px;
 }
+
 /* Primitives */
 
 .row {
@@ -137,9 +137,6 @@ header {
 .pic {
   width: 30%;
   height: 30%;
-}
-.hero-pic {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
