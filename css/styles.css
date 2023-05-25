@@ -109,6 +109,7 @@ header {
 }
 .hero-container {
   height: 100%;
+  position: relative;
 }
 .hero-container img {
   width: 100%;
