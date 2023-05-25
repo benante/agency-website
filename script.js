@@ -35,3 +35,28 @@ images.forEach((image) => {
     console.log(isPressed);
   });
 });
+
+// Open cards with Enter or Space
+cards.forEach((card) => {
+  card.addEventListener("click", toggleCaption);
+  card.addEventListener("keydown", handleKeyPress);
+});
+
+function toggleCaption(event) {
+  const card = event.currentTarget;
+  const caption = card.querySelector(".image-caption");
+
+  card.classList.toggle("active");
+  caption.classList.toggle("show");
+}
+
+function handleKeyPress(event) {
+  const key = event.key;
+  const card = event.currentTarget;
+  const caption = card.querySelector(".image-caption");
+
+  if (key === "Enter" || key === " ") {
+    event.preventDefault();
+    toggleCaption(event);
+  }
+}
