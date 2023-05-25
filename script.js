@@ -16,14 +16,6 @@ cards.forEach((card) => {
     card.classList.toggle("active"); // Toggle the "active" class on the clicked card
   });
 });
-// cards.forEach((wrapper) => {
-//   wrapper.addEventListener("click", () => {
-//     cards.forEach((wrapper) => {
-//       wrapper.classList.remove("active"); // Remove "active" class from all image wrappers
-//     });
-//     wrapper.classList.add("active"); // Add "active" class to the clicked image wrapper
-//   });
-// });
 
 // ARIA ATTRIBUTES
 
