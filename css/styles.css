@@ -124,12 +124,16 @@ header {
   display: block;
 }
 .card:hover {
-  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2); /* Adjust the shadow properties as desired */
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2);
 }
 .card:hover img {
   cursor: pointer;
   transition: transform 0.5s ease;
-  transform: scale(1.1) rotate(-2deg); /* Adjust the scale factor as desired */
+  transform: scale(1.1) rotate(-2deg);
+}
+/* Focus for better access with keyboard */
+.card:focus {
+  outline: 2px solid #21325e;
 }
 
 /* Primitives */
