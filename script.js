@@ -1,4 +1,4 @@
-//hamburger menu
+// HAMBURGER MENU
 const menuButton = document.querySelector("#hamburger");
 const mainMenu = document.querySelector("#main-menu");
 
@@ -8,35 +8,12 @@ menuButton.addEventListener("click", () => {
   mainMenu.classList.toggle("visible");
 });
 
-// Team Section
+// TEAM SECTION
+
+// Cards
 const cards = document.querySelectorAll(".card");
 
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("active"); // Toggle the "active" class on the clicked card
-  });
-});
-
-// ARIA ATTRIBUTES
-
-const images = document.querySelectorAll(".card img");
-
-// Add click event listener to each image
-images.forEach((image) => {
-  image.addEventListener("click", () => {
-    const caption = image.nextElementSibling; // Get the corresponding caption element
-    console.log(caption);
-    // Toggle the visibility of the caption
-    caption.classList.toggle("show");
-
-    // Toggle the aria-pressed attribute value
-    const isPressed = image.getAttribute("aria-pressed") === "true";
-    image.setAttribute("aria-pressed", !isPressed);
-    console.log(isPressed);
-  });
-});
-
-// Open cards with Enter or Space
+// Open cards with Enter or Space or when clicked
 cards.forEach((card) => {
   card.addEventListener("click", toggleCaption);
   card.addEventListener("keydown", handleKeyPress);
@@ -60,3 +37,21 @@ function handleKeyPress(event) {
     toggleCaption(event);
   }
 }
+
+// Aria attributes
+const images = document.querySelectorAll(".card img");
+
+// Add click event listener to each image
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    const caption = image.nextElementSibling; // Get the corresponding caption element
+    console.log(caption);
+    // Toggle the visibility of the caption
+    caption.classList.toggle("show");
+
+    // Toggle the aria-pressed attribute value
+    const isPressed = image.getAttribute("aria-pressed") === "true";
+    image.setAttribute("aria-pressed", !isPressed);
+    console.log(isPressed);
+  });
+});
