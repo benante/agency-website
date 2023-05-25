@@ -11,27 +11,43 @@
   <body>
     <!-- Header with name agency and navbar -->
     <header>
-      <nav role="navigation" aria-label="Main menu" class="row justify-space-between">
+      <nav
+        role="navigation"
+        aria-label="Main menu"
+        class="row justify-space-between"
+      >
         <div>
           <a href="/" class="logo">
-           <img class="logo" src="./img/Logo1.png" alt="Homepage" />
+            <img class="logo" src="./img/Logo1.png" alt="Homepage" />
           </a>
         </div>
-        <button aria-expanded="true" aria-controls="main-menu" id="hamburger" class="column">
-          <span>Menu</span>    
-<img class="menu-bars"
-src="./img/Hamburger Menu.svg"
-alt="hamburger menu svg image"
-focusable="false"
-/>
+        <button
+          aria-expanded="false"
+          aria-controls="main-menu"
+          id="hamburger"
+          class="column"
+          tabindex="-1"
+        >
+          <span>Menu</span>
+          <img
+            class="menu-bars"
+            src="./img/Hamburger Menu.svg"
+            alt="hamburger menu svg image"
+            focusable="false"
+          />
         </button>
-       
-        <ul id="main-menu" class="visible">
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Services</li>
-            <li><a href="#"></a>Team</li>
-            <li><a href="#"></a>Contact</li>
-          </ul>
+
+        <ul
+          id="main-menu"
+          class="visible"
+          role="menu"
+          aria-describedby="hamburger-label"
+          aria-expanded="false"
+        >
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Services</li>
+          <li><a href="#"></a>Team</li>
+          <li><a href="#"></a>Contact</li>
         </ul>
       </nav>
     </header>
