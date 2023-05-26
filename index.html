@@ -157,23 +157,100 @@
       </section>
 
       <!-- Contact -->
-      <section>
+      <section id="contact" class="center stack-m">
+        <h2>Contact Us</h2>
         <!-- Insert preventDefault function -->
-        <form action="" method="POST" id="form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        <div class="form-div">
+          <form
+            action=""
+            method="POST"
+            id="form"
+            class="stack-s left column"
+            aria-label="contact form"
+            tabindex="0"
+          >
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g Peter Parker"
+              required
+              aria-required="true"
+            />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g peter_parker@vigilante.com"
+              required
+              aria-required="true"
+            />
 
-          <label for="comment">Message:</label>
-          <textarea id="comment" name="comment" required></textarea>
+            <label for="tel">Mobile:</label>
+            <input
+              id="tel"
+              name="tel"
+              type="tel"
+              placeholder="012345678"
+              required
+              aria-required="true"
+            />
 
-          <label for="subscription">Subscribe to our newsletter</label>
-          <input type="checkbox" name="subscription" id="checkbox" />
+            <fieldset class="row">
+              <legend>Preferred contact method:</legend>
 
-          <input type="submit" value="Send" />
-        </form>
+              <input
+                id="contact-email"
+                type="radio"
+                name="contact"
+                value="email"
+                checked
+              />
+              <label for="contact-email" class="radio">Email</label>
+
+              <input
+                id="contact-tel"
+                type="radio"
+                name="contact"
+                value="telephone"
+              />
+              <label for="contact-tel" class="radio">Mobile</label>
+            </fieldset>
+
+            <label for="comment">Message:</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder=" Your message here..."
+              required
+              aria-required="true"
+            ></textarea>
+
+            <input type="checkbox" name="subscription" id="checkbox" />
+            <label for="checkbox" class="checkbox"
+              >Subscribe to our newsletter</label
+            >
+
+            <label for="trainers">Preferred trainer:</label>
+            <select
+              name="trainers"
+              id="trainers"
+              class="custom-select"
+              aria-required="true"
+            >
+              <option value="" disabled selected hidden></option>
+              <option value="wonder-woman">Wonder Woman</option>
+              <option value="batman">Batman</option>
+              <option value="terminator">Terminator</option>
+              <option value="professor-xavier">Professor Xavier</option>
+            </select>
+
+            <button type="submit" title="Submit the form">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
