@@ -16,7 +16,7 @@ body {
 }
 :root {
   --color-darkblue: #21325e;
-  --color-blue: #3e497a;
+  --color-blue: #bcc1d7;
   --color-yellow: #f1d00a;
   --color-grey: #f0f0f0;
 }
@@ -36,7 +36,9 @@ header {
   padding: 1rem;
   padding: 10px;
   height: 15vh;
+  position: sticky;
   background-color: var(--color-grey);
+  z-index: 100;
 }
 .logo {
   width: 100px;
@@ -115,6 +117,23 @@ header {
   width: 100%;
   max-height: 100vh;
   object-fit: cover;
+}
+/* About */
+.testimonial {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border: solid 3px;
+  border-radius: 5px;
+  border-color: var(--color-blue);
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+}
+.second-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Primitives */
