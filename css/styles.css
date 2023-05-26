@@ -135,6 +135,25 @@ header {
   justify-content: center;
   align-items: center;
 }
+/* Footer */
+.footer {
+  background-color: var(--color-darkblue);
+  width: 100vw;
+  margin-top: 1rem;
+  color: var(--color-grey);
+  bottom: 0;
+  text-align: center;
+  padding: 1em;
+}
+
+.fa {
+  padding: 5px;
+  width: 30px;
+  border-radius: 5px;
+  background: var(--color-grey);
+  text-align: center;
+  text-decoration: none;
+}
 
 /* Primitives */
 
