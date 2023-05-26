@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Our agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Valour Academy</title>
   </head>
   <body>
     <!-- Header with name agency and navbar -->
@@ -16,17 +20,19 @@
         aria-label="Main menu"
         class="row justify-space-between"
       >
-        <div>
-          <a href="/" class="logo">
-            <img class="logo" src="./img/Logo1.png" alt="Homepage" />
-          </a>
-        </div>
+        <a
+          href="#hero-section"
+          class="logo"
+          aria-label="Back to top of the page"
+        >
+          <img class="logo" src="./img/Logo1.png" alt="Homepage" tabindex="0" />
+        </a>
         <button
           aria-expanded="false"
           aria-controls="main-menu"
           id="hamburger"
           class="column"
-          tabindex="-1"
+          tabindex="0"
         >
           <span>Menu</span>
           <img
@@ -44,10 +50,30 @@
           aria-describedby="hamburger-label"
           aria-expanded="false"
         >
-          <li><a href="#"></a>About</li>
-          <li><a href="#"></a>Services</li>
-          <li><a href="#"></a>Team</li>
-          <li><a href="#"></a>Contact</li>
+          <li>
+            <a
+              aria-label="About Valour Academy"
+              href="#about-section"
+              tabindex="0"
+              >About</a
+            >
+          </li>
+          <li>
+            <a aria-label="Our team of trainers" href="#team" tabindex="0"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              aria-label="Our training programmes"
+              href="#programmes"
+              tabindex="0"
+              >Programmes</a
+            >
+          </li>
+          <li>
+            <a aria-label="Contact us" href="#contact" tabindex="0">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
