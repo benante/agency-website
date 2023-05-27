@@ -36,7 +36,7 @@ header {
   top: 0;
   padding: 1rem;
   padding: 10px;
-  height: 15vh;
+  /* height: 15vh; */
   position: sticky;
   background-color: var(--color-grey);
   z-index: 100;
@@ -382,12 +382,6 @@ button:focus,
   margin-top: 4rem;
 }
 
-/* IMG & LOGO */
-.pic {
-  width: 30%;
-  height: 30%;
-}
-
 @media screen and (min-width: 768px) {
   #hamburger {
     display: none;
@@ -417,16 +411,6 @@ button:focus,
   .testimonial img {
     width: 150px;
     height: 150px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-  .card {
-    width: auto;
   }
 }
 
