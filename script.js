@@ -13,6 +13,31 @@ menuButton.addEventListener("click", () => {
   mainMenu.classList.toggle("visible");
 });
 
+// When such a link is clicked, it prevents the default scroll behavior and calculates the target section's position.
+// The offset variable represents the height of your fixed header or any other elements that need to be offset. Adjust this value according to the actual height of your fixed header.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      var target = document.querySelector(this.getAttribute("href"));
+      var offset = 100; // Adjust the offset value to match the height of your fixed header
+
+      if (target) {
+        var targetPosition =
+          target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+
 // TEAM SECTION
 
 // Cards
