@@ -190,7 +190,7 @@ input,
 textarea,
 fieldset,
 button {
-  width: 100%;
+  width: 80%;
   border: none;
 }
 
@@ -417,6 +417,13 @@ button:focus,
   .testimonial img {
     width: 150px;
     height: 150px;
+  }
+  input,
+  textarea,
+  fieldset,
+  button {
+    width: 100%;
+    border: none;
   }
 }
 
