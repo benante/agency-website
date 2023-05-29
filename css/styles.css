@@ -91,54 +91,6 @@ header {
   box-shadow: var(--color-yellow) 1.95px 1.95px 2.6px;
 }
 
-/* TEAM SECTION Cards */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  /* background-color: var(--color-yellow); */
-  border-radius: 5px;
-  justify-content: center;
-  gap: 10px;
-}
-
-.card {
-  position: relative;
-  flex-basis: calc(50% - 5px);
-  border: solid 2px #21325e;
-  box-sizing: border-box;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.pic {
-  width: 100%;
-  height: 100%;
-}
-.image-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 8px;
-  display: none;
-}
-
-.card.active .image-caption {
-  display: block;
-}
-.card:hover {
-  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2);
-}
-.card:hover img {
-  cursor: pointer;
-  transition: transform 0.5s ease;
-  transform: scale(1.1) rotate(-2deg);
-}
-/* Focus for better access with keyboard */
-.card:focus {
-  outline: 2px solid #21325e;
-}
-
 /* Hero-section */
 .hero-pic {
   width: 100%;
@@ -281,6 +233,54 @@ header {
 .img-5 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+/* TEAM SECTION Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: var(--color-yellow); */
+  border-radius: 5px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  flex-basis: calc(50% - 5px);
+  border: solid 2px #21325e;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+}
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px;
+  display: none;
+}
+
+.card.active .image-caption {
+  display: block;
+}
+.card:hover {
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2);
+}
+.card:hover img {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(1.1) rotate(-2deg);
+}
+/* Focus for better access with keyboard */
+.card:focus {
+  outline: 2px solid #21325e;
 }
 
 /* Contact */
