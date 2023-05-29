@@ -85,3 +85,15 @@ images.forEach((image) => {
     console.log(isPressed);
   });
 });
+
+// Add an event listener for form submission
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Display the success message
+  const successMessage = document.getElementById("success-message");
+  successMessage.style.display = "block";
+
+  // Reset the form fields
+  form.reset();
+});
