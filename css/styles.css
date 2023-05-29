@@ -437,7 +437,6 @@ button:focus,
 .grid-1 {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 2fr 1fr;
 }
 .column-lg {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -525,6 +524,9 @@ button:focus,
   fieldset {
     width: 100%;
     border: none;
+  }
+  .grid-1 {
+    grid-template-columns: 2fr 1fr;
   }
 }
 
