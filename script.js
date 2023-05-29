@@ -1,4 +1,3 @@
-// HAMBURGER MENU
 const menuButton = document.querySelector("#hamburger");
 const mainMenu = document.querySelector("#main-menu");
 const navlinks = document.querySelectorAll(".links");
@@ -7,16 +6,26 @@ const logoLink = document.querySelector(".logo");
 mainMenu.classList.remove("visible");
 
 menuButton.addEventListener("click", () => {
-  console.log(`clicked`);
+  console.log("clicked");
   const expanded = menuButton.getAttribute("aria-expanded") === "true" || false;
   menuButton.setAttribute("aria-expanded", !expanded);
   mainMenu.classList.toggle("visible");
 });
 
+const handleClick = () => {
+  mainMenu.classList.remove("visible");
+};
+
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
 navlinks.forEach((navLink) => {
-  navLink.addEventListener("click", () => {
-    mainMenu.classList.toggle("visible");
-  });
+  navLink.addEventListener("click", handleClick);
+});
+
+mediaQuery.addListener((e) => {
+  if (!e.matches) {
+    mainMenu.classList.remove("visible");
+  }
 });
 
 // When such a link is clicked, it prevents the default scroll behavior and calculates the target section's position.
