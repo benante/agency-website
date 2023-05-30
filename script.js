@@ -6,7 +6,6 @@ const logoLink = document.querySelector(".logo");
 mainMenu.classList.remove("visible");
 
 menuButton.addEventListener("click", () => {
-  console.log("clicked");
   const expanded = menuButton.getAttribute("aria-expanded") === "true" || false;
   menuButton.setAttribute("aria-expanded", !expanded);
   mainMenu.classList.toggle("visible");
@@ -90,14 +89,12 @@ const images = document.querySelectorAll(".card img");
 images.forEach((image) => {
   image.addEventListener("click", () => {
     const caption = image.nextElementSibling; // Get the corresponding caption element
-    console.log(caption);
     // Toggle the visibility of the caption
     caption.classList.toggle("show");
 
     // Toggle the aria-pressed attribute value
     const isPressed = image.getAttribute("aria-pressed") === "true";
     image.setAttribute("aria-pressed", !isPressed);
-    console.log(isPressed);
   });
 });
 
