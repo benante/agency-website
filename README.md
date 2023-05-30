@@ -54,7 +54,7 @@ The Valour Academy website provides the following features:
 
 To run the Valour Academy website locally, follow these steps:
 
-1. Clone the repository: `**git clone** https://github.com/your-username/valour-academy.git`
+1. Clone the repository: `git clone https://github.com/your-username/valour-academy.git`
 2. Navigate to the project directory: **cd valour-academy**
 
 That's it! You can now open the **index.html** file in your preferred web browser.
