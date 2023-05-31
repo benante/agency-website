@@ -113,7 +113,7 @@ header {
 .heading {
   position: absolute;
   top: 15%;
-  left: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3vw;
   text-align: center;
