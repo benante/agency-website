@@ -112,10 +112,10 @@ header {
 
 .heading {
   position: absolute;
-  top: 85%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   color: #fff;
   background: radial-gradient(
@@ -123,8 +123,8 @@ header {
     rgba(0, 0, 0, 0.361),
     rgba(0, 0, 0, 0.059)
   );
-  padding: 10px;
-  width: 100vw;
+  padding: 12px;
+  width: 80vw;
 }
 .hero-container {
   position: relative;
@@ -133,7 +133,7 @@ header {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw; /* Set the width of the image to 100% of the viewport width */
+  width: 100vw;
   height: auto;
 }
 
@@ -217,7 +217,7 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; /* Centers the text horizontally */
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -328,7 +328,6 @@ input[type="checkbox"] {
 }
 
 [type="radio"]:checked + label::before {
-  /* background-color: hsl(220, 30%, 40%); */
   background-image: radial-gradient(
     hsl(220, 30%, 40%),
     hsl(220, 30%, 40%) 40%,
@@ -430,17 +429,9 @@ button:focus,
 
 /* Primitives */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1rem;
-}
 .grid-1 {
   display: grid;
   gap: 1rem;
-}
-.column-lg {
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .row {
@@ -466,15 +457,7 @@ button:focus,
   margin-left: auto;
   margin-right: auto;
 }
-.width-sm {
-  max-width: 20rem;
-}
-.width-lg {
-  max-width: 40rem;
-}
-.width-xl {
-  max-width: 60rem;
-}
+
 .stack-s > * + * {
   margin-top: 0.5rem;
 }
